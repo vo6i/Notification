@@ -19,6 +19,7 @@
         });
     }
 
+    let notification
     let interval
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "hidden") {
@@ -38,7 +39,7 @@
         if (interval) clearInterval(interval)
         if (notification) notification.close()
       }
-    })    
+    })
     // show an error message
     const showError = () => {
         const error = document.querySelector('.error');
