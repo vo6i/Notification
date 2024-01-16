@@ -4,7 +4,7 @@
         // create a new notification
         const notification = new Notification('JavaScript Notification API', {
             body: 'This is a JavaScript Notification API demo',
-            icon: './img/js.png'
+            icon: '.js.png'
         });
 
         // close the notification after 10 seconds
