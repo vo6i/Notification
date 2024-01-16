@@ -4,7 +4,7 @@
         // create a new notification
         const notification = new Notification('JavaScript Notification API', {
             body: 'This is a JavaScript Notification API demo',
-            icon: '.js.png'
+            icon: 'js.png'
         });
 
         // close the notification after 10 seconds
@@ -15,7 +15,7 @@
         // navigate to a URL when clicked
         notification.addEventListener('click', () => {
 
-            window.open('https://www.javascripttutorial.net/web-apis/javascript-notification/', '_blank');
+            window.open('https://dclxviclan.itch.io/happy-new-year');
         });
     }
 
