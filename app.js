@@ -26,18 +26,20 @@
         const leaveDate = new Date()
         interval = setInterval(() => {
           notification = new Notification("Come back to dclxviclan", {
-            body: `You have been gone for ${Math.round(
-              (new Date() - leaveDate) / 1000
-            )} seconds`,
+            body: `You have been gone for ${Math.round((new Date() - leaveDate) / 1000)} seconds`,
             tag: "Come Back",
+            icon: 'js.png',
           })
-         }, 100)
-       } else {
-         if (interval) clearInterval(interval)
-         if (notification) notification.close()
-       }
-    })
+	  notification.addEventListener('click', () => {
 
+            window.open('https://dclxviclan.itch.io/happy-new-year');
+        })
+        }, 100)
+      } else {
+        if (interval) clearInterval(interval)
+        if (notification) notification.close()
+      }
+    })    
     // show an error message
     const showError = () => {
         const error = document.querySelector('.error');
