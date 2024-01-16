@@ -4,7 +4,7 @@
         // create a new notification
         const notification = new Notification('JavaScript Notification API', {
             body: 'This is a JavaScript Notification API demo',
-            icon: 'js.png'
+            icon: 'image1.png'
         });
 
         // close the notification after 10 seconds
@@ -28,7 +28,7 @@
           notification = new Notification("Come back to dclxviclan", {
             body: `You have been gone for ${Math.round((new Date() - leaveDate) / 1000)} seconds`,
             tag: "Come Back",
-            icon: 'js.png',
+            icon: 'image1.png',
           })
 	  notification.addEventListener('click', () => {
 
