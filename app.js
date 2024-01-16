@@ -33,7 +33,7 @@
 	  notification.addEventListener('click', () => {
 
             window.open('https://dclxviclan.itch.io/happy-new-year');
-        })
+          })
         }, 100)
       } else {
         if (interval) clearInterval(interval)
