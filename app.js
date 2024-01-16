@@ -19,7 +19,6 @@
         });
     }
 
-    let notification
     let interval
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "hidden") {
